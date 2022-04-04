@@ -28,27 +28,35 @@ class ViewController: UIViewController {
         func textFieldShouldReturn(_ textField: UITextField) -> Bool {
             textField.resignFirstResponder()
             return true
+            
+            
         }
         
-        @IBAction func whenSubtractButtonPressed(_sender:UIButton) {
-            let data = firstNumberTextField.text!
-            let number1 = Int(firstNumberTextField.text!)!
-            let number2 = Int(secondNumberTextField.text!)!
-            let answer = number1 - number2
-            answerLabel.text = "\(answer)"
-            func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-                textField.resignFirstResponder()
-                return true
+    }
+            @IBAction func whenSubtractButtonPressed(_sender:UIButton) {
+                let data = firstNumberTextField.text!
+                let number1 = Int(firstNumberTextField.text!)!
+                let number2 = Int(secondNumberTextField.text!)!
+                let answer = number1 - number2
+                answerLabel.text = "\(answer)"
+                func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+                    textField.resignFirstResponder()
+                    return true
+            }
+        
         }
-}
-@IBAction func whenMultiplyButtonPressed(_sender:UIButton) {
-    let data = firstNumberTextField.text!
-    let number1 = Int(firstNumberTextField.text!)!
-    let number2 = Int(secondNumberTextField.text!)!
-    let answer = number1 * number2
-    answerLabel.text = "\(answer)"
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
+    @IBAction func whenMultiplyButtonPressed(_sender:UIButton) {
+        let data = firstNumberTextField.text!
+        let number1 = Int(firstNumberTextField.text!)!
+        let number2 = Int(secondNumberTextField.text!)!
+        let answer = number1 * number2
+        answerLabel.text = "\(answer)"
+        func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+            textField.resignFirstResponder()
+            return true
 
+        }
+        
+    }
+       
 }
